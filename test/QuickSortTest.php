@@ -14,7 +14,7 @@ final class QuickSortTest extends TestCase
         $result = $funcSort->QuickSort($unsorted);
         $this->assertSame($sorted, $result);
     }
-    public function test_sort_array_sorted(): void // Vérifie que le tri fonctionne  même sur un tableau filtré
+    public function test_sort_array_sorted(): void // Vérifie que le tri fonctionne même sur un tableau filtré
     {
         $funcSort = new QuickSortClass();
         $unsorted = [1, 2, 3, 4, 5];
@@ -38,7 +38,7 @@ final class QuickSortTest extends TestCase
         $result = $funcSort->QuickSort($unsorted);
         $this->assertSame($sorted, $result);
     }
-    public function test_sort_float(): void // Vérifie que le tri fonctionne sur les nombre à virgule
+    public function test_sort_float(): void // Vérifie que le tri fonctionne sur les nombres à virgule
     {
         $funcSort = new QuickSortClass();
         $unsorted = [3.5, 1.2, 4.8, 2.1];
