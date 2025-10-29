@@ -47,8 +47,8 @@ pipeline {
                         sh '''
                             git config user.email "jenkins@chipaux.com"
                             git config user.name "Jenkins CI"
-                            git tag -a v${BUILD_VERSION} -m "Version ${BUILD_VERSION} - Build automatique"
-                            git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Laurent-chpx/unit-test.git v${BUILD_VERSION}
+                            git tag -a v${BUILD_VERSION}-jenkinsfile -m "Version ${BUILD_VERSION} - Build automatique"
+                            git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/Laurent-chpx/unit-test.git v${BUILD_VERSION}-jenkinsfile
                         '''
                     }
                 }
